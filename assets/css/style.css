@@ -7,3 +7,129 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f7f7f7;
 }
+.secondary-heading {
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: #403a3a;
+  text-transform: capitalize;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.fas.fa-chevron-left,
+.fas.fa-chevron-right {
+  font-size: 1.5rem;
+}
+
+/* End of common styles */
+
+/* Trending brands */
+#trending-brands {
+  position: relative;
+  padding: 5rem 0;
+}
+
+#trending-brands .secondary-heading {
+  margin-bottom: 4rem;
+}
+
+/* Slider */
+#trending-brands .slide {
+  margin: 0 10px;
+}
+
+.slide-arrow {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -7.5rem;
+  background: #f3f3f3;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.prev-arrow {
+  right: 5.5rem;
+}
+
+.next-arrow {
+  right: 1rem;
+}
+
+.slide-arrow:hover .fas {
+  color: #fff;
+}
+
+.slide-arrow:hover {
+  background: #fc813c;
+}
+
+.slide-text span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #7c7a7a;
+  margin-top: 13px;
+}
+
+.slide-text h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+
+.slide .img-responsive {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+/* End of Slider */
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  .secondary-heading {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  #trending-brands .secondary-heading {
+    margin-bottom: 3rem;
+  }
+
+  .slider {
+    text-align: center;
+  }
+
+  .slide-text span {
+    font-size: 1.1rem;
+    color: #7c7a7a;
+    margin-top: 13px;
+  }
+
+  .slide-text h3 {
+    font-size: 1.8rem;
+    color: #2f2f2f;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slide .img-responsive {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/* End of Media Query */
+/* End of Trending brands */
