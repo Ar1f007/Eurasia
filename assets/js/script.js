@@ -3,6 +3,7 @@ $(document).ready(function () {
   const arrowRight = `<button class="slide-arrow next-arrow active"><i class="fas fa-chevron-right"></i></button>`;
 
   $(".slider").slick({
+    autoplay: true,
     arrows: true,
     speed: 1000,
     slidesToShow: 3,
@@ -26,3 +27,23 @@ $(document).ready(function () {
     ],
   });
 });
+
+// All categories
+const hiddenColumns = document.querySelectorAll(".hidden");
+
+const showBtn = document.querySelector(".show-all-btn");
+
+showBtn.addEventListener("click", () => {
+  hiddenColumns.forEach((col) => {
+    if (col.classList.contains("hidden-col")) {
+      col.classList.remove("hidden-col");
+      document.querySelector(".less").style.display = "block";
+      document.querySelector(".more").style.display = "none";
+    } else {
+      col.classList.add("hidden-col");
+      document.querySelector(".more").style.display = "block";
+      document.querySelector(".less").style.display = "none";
+    }
+  });
+});
+// End of All categories
