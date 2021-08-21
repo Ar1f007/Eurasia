@@ -282,6 +282,13 @@ button {
   #browse-all-categories .show-all-btn:hover span {
     margin-left: 5px;
   }
+
+  .show-all-btn:hover .left-arrow {
+    margin-left: -5px;
+  }
+  .show-all-btn:hover .left-arrow {
+    margin-left: 0px;
+  }
 }
 /* End of Media query  */
 /* End of Browse All Categories */
