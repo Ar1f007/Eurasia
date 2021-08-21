@@ -5,7 +5,6 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #e5e5e5;
 }
 
 .secondary-heading {
@@ -187,6 +186,7 @@ button {
   text-transform: capitalize;
   position: relative;
   transition: all 0.3s;
+  margin: 6rem 0 7rem;
 }
 
 #browse-all-categories .show-all-btn:active,
@@ -291,4 +291,183 @@ button {
   }
 }
 /* End of Media query  */
+
 /* End of Browse All Categories */
+/* About us  */
+.about-us-text {
+  font-size: 1.8rem;
+  font-size: 18px;
+  font-weight: 400;
+  color: #686868;
+  line-height: 35px;
+  margin-top: 6rem;
+}
+
+.about-us-text span {
+  display: block;
+  margin: 3.5rem 0;
+}
+
+.logo-col img:not(:last-of-type) {
+  margin-right: 3rem;
+}
+
+.testimonial {
+  width: 27.5rem;
+  min-height: 20rem;
+  background: rgba(239, 239, 239, 0.361);
+  -webkit-backdrop-filter: blur(54px);
+  backdrop-filter: blur(54px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: inset 0px 0px 0px 1.4px #f3f3f3;
+  position: relative;
+}
+
+.circle {
+  position: relative;
+  margin: 3rem 0 4rem 3rem;
+}
+
+.circle-blue,
+.circle-orange {
+  margin-left: 6.5rem;
+}
+
+.circle-blue {
+  margin-top: 5.5rem;
+}
+
+.circle-red {
+  margin-top: 0.5rem;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  top: -4.1rem;
+  left: -4.2rem;
+}
+
+.circle-yellow.circle::before {
+  background-color: #ffb12b;
+}
+.circle-blue.circle::before {
+  background-color: #2bb3ff;
+}
+.circle-red.circle::before {
+  background-color: #e02424;
+}
+.circle-orange.circle::before {
+  background-color: #ff8a48;
+}
+
+.testimonial .reviewer-img {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  object-fit: cover;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.testimonial h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #181818;
+  margin: 1rem 0;
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #717171;
+  margin-bottom: 1.5rem;
+}
+
+.rating p {
+  font-size: 14px;
+  margin: 0.5rem 0;
+}
+
+/* Media Query  */
+@media (min-width: 992px) and (max-width: 1400px) {
+  #about-us .secondary-heading {
+    text-align: center !important;
+    margin-bottom: -3rem;
+  }
+  .about-us-text-wrapper,
+  .testimonial-wrapper {
+    width: 70%;
+  }
+
+  .about-us-text-wrapper {
+    margin: auto;
+  }
+
+  .about-us-text-wrapper .row {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-us-text {
+    padding: 0rem;
+  }
+
+  .testimonial-wrapper {
+    margin: 6rem auto;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 992px) {
+  #about-us .secondary-heading {
+    margin-bottom: -3.5rem;
+  }
+  .testimonial-wrapper {
+    margin: 6rem auto;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us-text {
+    font-size: 1.6rem;
+  }
+  .logo-col img:not(:last-of-type) {
+    margin-right: 2.5rem;
+  }
+
+  .circle {
+    margin: 3rem 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .about-us-text {
+    padding: 0 1.2rem;
+    line-height: 2;
+    text-align: justify;
+  }
+
+  .about-us-text span {
+    margin: 2.5rem 0;
+  }
+
+  .circle::before {
+    width: 70px;
+    height: 70px;
+    top: -3.1rem;
+    left: -3.3rem;
+  }
+
+  .testimonial-wrapper {
+    margin: 2rem auto;
+  }
+}
+
+/* End of Media Query  */
+/* End of About us  */
