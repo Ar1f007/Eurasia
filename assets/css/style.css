@@ -587,3 +587,166 @@ button {
 
 /* End of Media Query */
 /* End of Gallery section */
+/* Opening hours section */
+#opening-hours-map {
+  margin-bottom: 5rem;
+}
+.left-column [class*="row"] {
+  margin-bottom: 2rem;
+}
+.days,
+.time {
+  background-color: #ebebeb;
+  color: #464646;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1rem 0 1rem 2rem;
+}
+.time {
+  padding-left: 3.5rem;
+}
+.days div,
+.time .schedule {
+  margin-left: 1rem;
+}
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.days {
+  margin-right: 5px;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.time {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.map iframe {
+  border-radius: 27px;
+  width: 54rem;
+  height: 35rem;
+}
+.address {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #a0a0a0;
+}
+.address span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #403a3a;
+}
+
+/* Media query  */
+
+@media screen and (min-width: 1366px) {
+  .address {
+    margin-left: 10.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .days,
+  .time {
+    font-size: 1.6rem;
+  }
+  .time,
+  .days {
+    padding-left: 1.5rem;
+  }
+  .map iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .col-md-10 .row {
+    margin-left: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .days,
+  .time {
+    font-size: 1.5rem;
+  }
+  .col-md-10 .row {
+    margin-left: 0;
+  }
+  .map iframe {
+    margin-top: 3.5rem;
+    width: 100%;
+    height: 250px;
+  }
+
+  .svg {
+    width: 16px;
+  }
+
+  .close-icon-svg {
+    width: 18px;
+    margin: 1px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #opening-hours-map .left-column [class*="row"] {
+    margin-bottom: 1.2rem;
+  }
+
+  .days,
+  .time {
+    font-size: 1.25rem;
+  }
+
+  .time {
+    padding-right: 0.5rem;
+  }
+
+  .days div,
+  .time .schedule {
+    margin-left: 0.7rem;
+  }
+
+  .days,
+  .time {
+    padding-left: 1rem;
+  }
+
+  .address {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+  }
+
+  .address span {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #opening-hours-map .left-column .col-5 {
+    width: 47%;
+  }
+
+  #opening-hours-map .left-column .col-6 {
+    width: 49%;
+  }
+
+  .address span {
+    font-size: 1.3rem;
+  }
+
+  .address {
+    margin-left: 1rem;
+  }
+}
+
+/* End of Media query */
+/* End of Opening hours section */
