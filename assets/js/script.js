@@ -26,6 +26,39 @@ $(document).ready(function () {
       },
     ],
   });
+
+  //Gallery section
+  $(document).ready(function () {
+    $(".gallery-slider").slick({
+      autoplay: true,
+      arrows: true,
+      speed: 1000,
+      slidesToShow: 2,
+      variableWidth: true,
+      prevArrow: arrowLeft,
+      nextArrow: arrowRight,
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+          },
+        },
+      ],
+    });
+  });
 });
 
 // All categories
