@@ -589,7 +589,7 @@ button {
 /* End of Gallery section */
 /* Opening hours section */
 #opening-hours-map {
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 }
 .left-column [class*="row"] {
   margin-bottom: 2rem;
@@ -750,3 +750,185 @@ button {
 
 /* End of Media query */
 /* End of Opening hours section */
+/* Footer */
+#footer {
+  background: #27333d;
+  color: #fff;
+  padding: 5.5rem 1rem;
+}
+#footer .logo {
+  width: 13.5rem;
+}
+
+#footer .company-name h6 {
+  font-size: 3.6rem;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: -0.2rem;
+}
+
+#footer .company-name span {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+#footer .icon-box {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+#footer .icon-box img {
+  width: 100%;
+}
+
+#footer .footer-info-box {
+  margin-left: 4.5rem;
+}
+
+#footer .footer-info {
+  margin-left: 4.5rem;
+}
+
+#footer .footer-info-box:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+#footer .footer-info span {
+  color: #cacaca;
+}
+#footer .footer-info span:first-child {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#footer .footer-info span:last-child {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+#footer a {
+  text-decoration: none;
+}
+
+#footer h5 {
+  border-bottom: 2px solid #5a5a5a;
+  width: max-content;
+  padding-bottom: 8px;
+}
+
+#footer .link-item {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #c7c7c7;
+  margin: 2rem 0;
+  text-transform: capitalize;
+  transition: all 0.2s;
+}
+
+#footer .link-item:hover {
+  color: #f7f7f7;
+}
+
+#footer .social-media-icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+#footer .social-media-icon i {
+  color: #27333d;
+  font-size: 18px;
+}
+
+#footer .social-media-icon:hover {
+  background-color: #e9e5e5;
+}
+
+/* Media query  */
+@media screen and (max-width: 1366px) {
+  #footer .social-media-links {
+    flex-wrap: wrap;
+  }
+
+  #footer .social-media-icon {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #footer .footer-info-box:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+  }
+
+  #footer .logo-box {
+    margin-left: 2.5rem;
+  }
+  #footer .footer-info-box {
+    margin-left: 4.5rem;
+  }
+
+  #footer .company-name h6 {
+    font-size: 2.6rem;
+  }
+
+  #footer .company-name span {
+    font-size: 1.6rem;
+  }
+
+  #footer .logo {
+    width: 7.5rem;
+  }
+  #footer .icon-box {
+    max-width: 20px;
+    max-height: 20px;
+  }
+
+  #footer .footer-info {
+    margin-left: 2rem;
+  }
+
+  #footer .footer-info span:first-child {
+    font-size: 1.2rem;
+  }
+
+  #footer .footer-info span:last-child {
+    font-size: 1.5rem;
+  }
+
+  #footer .link-item {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #footer h5 {
+    display: inline-block;
+  }
+
+  #footer .footer-info-box {
+    text-align: left;
+  }
+
+  #footer .footer-info {
+    margin-left: 4rem;
+  }
+
+  #footer .footer-info-box:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+
+  #footer .social-media-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  #footer .social-media-icon i {
+    font-size: 12px;
+  }
+}
+/* End of media query */
+/* End of footer */
