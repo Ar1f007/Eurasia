@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 2 version
+*/
+
 /* common styles */
 html {
   font-size: 62.5%;
@@ -33,6 +40,184 @@ button {
 
 /* End of common styles */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
+}
+
+/* Promotion section */
+#promotions {
+  margin: 4rem 0 10rem 0;
+}
+
+.offer {
+  width: 100%;
+  height: 38rem;
+  background-color: #98e6d8;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 5rem;
+  position: relative;
+}
+
+.offer h3 {
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: 0.1px;
+}
+
+.offer h3 span {
+  font-size: 7.2rem;
+  font-weight: 700;
+}
+
+.offer p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  color: #000;
+  margin-bottom: 2.2rem;
+}
+
+.cta-btn {
+  width: 136px;
+  height: 4.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+  border-radius: 10px;
+}
+
+.product-img {
+  position: absolute;
+  bottom: 1.4rem;
+  right: 1.8rem;
+}
+
+.slider-area {
+  position: relative;
+  max-height: 38rem;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.slide-arrow-prom {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 2rem;
+  background: #f3f3f3;
+  z-index: 10000;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.prev-arrow-prom {
+  right: 7.5rem;
+}
+
+.next-arrow-prom {
+  right: 2.5rem;
+}
+
+.slide-arrow-prom:hover .fas {
+  color: #fff;
+}
+
+.slide-arrow-prom:hover {
+  background: #fc813c;
+}
+
+.slide .img-responsive {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1100px) {
+  .offer {
+    margin-top: 5rem;
+  }
+
+  .product-img {
+    width: 45%;
+    bottom: 4.5rem;
+    right: 5rem;
+  }
+
+  .cta-btn {
+    position: relative;
+    top: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #promotions {
+    margin: 4rem 0 2rem 0;
+  }
+
+  .offer {
+    padding-left: 2rem;
+    margin-top: 3rem;
+  }
+
+  .product-img {
+    width: 45%;
+    bottom: 4.5rem;
+    right: 1rem;
+  }
+  .cta-btn {
+    position: relative;
+    top: 2rem;
+  }
+
+  .slider-area .img-responsive {
+    width: 100%;
+  }
+
+  .offer {
+    height: 30rem;
+  }
+
+  .offer h3 {
+    font-size: 2.6rem;
+  }
+
+  .offer h3 span {
+    font-size: 5.2rem;
+  }
+
+  .offer p {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+}
+/* End of Promotion section */
+
 /* Trending brands */
 #trending-brands {
   position: relative;
@@ -55,9 +240,16 @@ button {
   top: -7.5rem;
   background: #f3f3f3;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -93,6 +285,7 @@ button {
 
 .slide .img-responsive {
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -147,13 +340,17 @@ button {
 #browse-all-categories .card {
   width: 300px;
   background: #ffffff;
+  -webkit-box-shadow: 25px 17px 59px 11px rgba(0, 0, 0, 0.06);
   box-shadow: 25px 17px 59px 11px rgba(0, 0, 0, 0.06);
   border-radius: 30px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 #browse-all-categories .card:hover {
+  -webkit-transform: translateY(-0.8rem);
   transform: translateY(-0.8rem);
+  -webkit-box-shadow: 25px 17px 59px 11px rgba(0, 0, 0, 0.09);
   box-shadow: 25px 17px 59px 11px rgba(0, 0, 0, 0.09);
 }
 
@@ -179,23 +376,32 @@ button {
   font-size: 2.4rem;
   font-weight: 500;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 10px;
   text-transform: capitalize;
   position: relative;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   margin: 6rem 0 7rem;
 }
 
 #browse-all-categories .show-all-btn:active,
 #browse-all-categories .show-all-btn:focus {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 #browse-all-categories .show-all-btn span {
   margin-left: 8px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 #browse-all-categories .show-all-btn:hover {
@@ -203,6 +409,7 @@ button {
 }
 #browse-all-categories .show-all-btn:hover span {
   margin-left: 15px;
+  -webkit-transition: margin-left 0.2s;
   transition: margin-left 0.2s;
 }
 
@@ -211,8 +418,10 @@ button {
 }
 
 .show-all-btn .left-arrow {
+  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   margin-left: 8px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .show-all-btn:hover .left-arrow {
@@ -237,7 +446,11 @@ button {
 
   #browse-all-categories [class*="col-"] {
     margin: 1.5rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -261,6 +474,10 @@ button {
 @media screen and (max-width: 580px) {
   #browse-all-categories [class*="col-"] {
     margin: 0.7rem auto;
+  }
+
+  #browse-all-categories .secondary-heading {
+    margin-top: 0;
   }
 
   .card .card-text {
@@ -320,6 +537,7 @@ button {
   backdrop-filter: blur(54px);
   border-radius: 20px;
   padding: 2rem;
+  -webkit-box-shadow: inset 0px 0px 0px 1.4px #f3f3f3;
   box-shadow: inset 0px 0px 0px 1.4px #f3f3f3;
   position: relative;
 }
@@ -369,6 +587,7 @@ button {
   width: 28px;
   height: 28px;
   display: inline-block;
+  -o-object-fit: cover;
   object-fit: cover;
   text-align: center;
   border-radius: 50%;
@@ -410,6 +629,8 @@ button {
 
   .about-us-text-wrapper .row {
     width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -419,6 +640,8 @@ button {
 
   .testimonial-wrapper {
     margin: 6rem auto;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 }
@@ -429,6 +652,8 @@ button {
   }
   .testimonial-wrapper {
     margin: 6rem auto;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 }
@@ -446,7 +671,16 @@ button {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .testimonial-wrapper {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 580px) {
+  #about-us {
+    margin-top: 4rem;
+  }
+
   .about-us-text {
     padding: 0 1.2rem;
     line-height: 2;
@@ -455,6 +689,10 @@ button {
 
   .about-us-text span {
     margin: 2.5rem 0;
+  }
+
+  .logo-col {
+    margin-bottom: 4rem;
   }
 
   .circle::before {
@@ -466,6 +704,7 @@ button {
 
   .testimonial-wrapper {
     margin: 2rem auto;
+    margin-bottom: 0;
   }
 }
 
@@ -473,7 +712,6 @@ button {
 /* End of About us  */
 
 /* Gallery */
-
 .img-big {
   height: 500px;
   width: auto;
@@ -495,7 +733,7 @@ button {
   width: 490px;
 }
 
-.active {
+.active-arrow {
   background: #fc813c;
   color: #fff;
 }
@@ -569,6 +807,7 @@ button {
   #trending-brands .container {
     padding: 20px;
   }
+
   .slick-slide-big {
     width: 93vw;
   }
@@ -812,6 +1051,8 @@ button {
 
 #footer h5 {
   border-bottom: 2px solid #5a5a5a;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   padding-bottom: 8px;
 }
@@ -822,6 +1063,7 @@ button {
   color: #c7c7c7;
   margin: 2rem 0;
   text-transform: capitalize;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -834,9 +1076,16 @@ button {
   height: 3.6rem;
   background-color: #fff;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -852,6 +1101,7 @@ button {
 /* Media query  */
 @media screen and (max-width: 1366px) {
   #footer .social-media-links {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 

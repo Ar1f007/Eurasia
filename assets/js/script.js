@@ -1,11 +1,34 @@
 $(document).ready(function () {
   const arrowLeft = `<button class="slide-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>`;
-  const arrowRight = `<button class="slide-arrow next-arrow active"><i class="fas fa-chevron-right"></i></button>`;
+  const arrowRight = `<button class="slide-arrow next-arrow active-arrow"><i class="fas fa-chevron-right"></i></button>`;
 
-  $(".slider").slick({
+  // Promotions
+  $(".slider-img").slick({
+    arrows: true,
+    fade: true,
     autoplay: true,
+    autoplaySpeed: 2000,
+
+    prevArrow:
+      '<button class="slide-arrow-prom prev-arrow-prom"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow:
+      '<button class="slide-arrow-prom next-arrow-prom active-arrow"><i class="fas fa-chevron-right"></i></button>',
+
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
+  });
+
+  // Trending brands
+  $(".slider").slick({
     arrows: true,
     speed: 1000,
+    autoplay: true,
     slidesToShow: 3,
     prevArrow: arrowLeft,
     nextArrow: arrowRight,
