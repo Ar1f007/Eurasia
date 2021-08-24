@@ -3,11 +3,11 @@ $(document).ready(function () {
   const arrowRight = `<button class="slide-arrow next-arrow active-arrow"><i class="fas fa-chevron-right"></i></button>`;
 
   // Promotions
-  $(".slider-img").slick({
+  $(".promo-slider").slick({
     arrows: true,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
 
     prevArrow:
       '<button class="slide-arrow-prom prev-arrow-prom"><i class="fas fa-chevron-left"></i></button>',
