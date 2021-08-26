@@ -611,7 +611,51 @@ body {
 /* End of Banner  */
 /* End of Hero section  */
 
+/* Features  */
+#features .secondary-heading {
+  margin-bottom: 5rem;
+}
 
+#features h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #403a3a;
+  margin: 0.5rem 0;
+  text-transform: capitalize;
+}
+
+#features small {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #6b6b6b;
+  line-height: 1;
+}
+
+.feature-icon-middle {
+  position: relative;
+  width: 170px;
+  top: -2.5rem;
+}
+
+.feature-middle-text {
+  position: relative;
+  top: -6.5rem;
+}
+
+@media screen and (max-width: 580px) {
+  #features .secondary-heading {
+    margin-top: 5rem;
+  }
+
+  .feature-middle {
+    margin-top: 5rem;
+  }
+
+  .feature-icon-middle {
+    left: 1rem;
+  }
+}
+/* End of Features  */
 
 /* Promotion section */
 #promotions {
