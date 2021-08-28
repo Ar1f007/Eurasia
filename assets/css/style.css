@@ -656,6 +656,73 @@ body {
   }
 }
 /* End of Features  */
+/* Sponsors  */
+/* .logo-col img:not(:last-of-type) {
+  margin-right: 6.7rem;
+} */
+
+.sponsors:nth-child(1) {
+  width: 100%;
+  max-width: 269px;
+}
+.sponsors:nth-child(2) {
+  width: 100%;
+  max-width: 254px;
+}
+.sponsors:nth-child(3) {
+  width: 100%;
+  max-width: 167px;
+}
+.sponsors:nth-child(4) {
+  width: 100%;
+  max-width: 136px;
+}
+.sponsors:nth-child(5) {
+  width: 100%;
+  max-width: 198px;
+}
+
+@media screen and (max-width: 992px) {
+  .logo-col .sponsors {
+    width: 40%;
+  }
+
+  .logo-col img:not(:last-of-type) {
+    margin-right: 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo-col .sponsors {
+    width: 30%;
+  }
+
+  .logo-col img:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+
+
+  #features h3 {
+  font-size: 2rem;
+}
+
+#features small {
+  font-size: 1.5rem;
+}
+.feature-icon{
+  width: 77px;
+}
+
+
+#features .feature-icon-middle {
+  width: 120px;
+}
+
+.feature-middle-text {
+  top: -5.5rem;
+}
+
+}
+/* End of Sponsors  */
 
 /* Promotion section */
 #promotions {
