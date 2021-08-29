@@ -195,6 +195,8 @@ body {
     padding-left: 1rem;
   }
 
+  
+
   .form-control::-webkit-input-placeholder {
     font-size: 1rem;
   }
@@ -700,24 +702,27 @@ body {
     margin-right: 1rem;
   }
 
+
   #features h3 {
-    font-size: 2rem;
-  }
+  font-size: 2rem;
+}
 
-  #features small {
-    font-size: 1.5rem;
-  }
-  .feature-icon {
-    width: 77px;
-  }
+#features small {
+  font-size: 1.5rem;
+}
+.feature-icon{
+  width: 77px;
+}
 
-  #features .feature-icon-middle {
-    width: 120px;
-  }
 
-  .feature-middle-text {
-    top: -5.5rem;
-  }
+#features .feature-icon-middle {
+  width: 120px;
+}
+
+.feature-middle-text {
+  top: -5.5rem;
+}
+
 }
 /* End of Sponsors  */
 
@@ -872,10 +877,11 @@ body {
   .promo-slider {
     width: 100%;
   }
+
 }
 
 @media screen and (max-width: 761px) {
-  .offer {
+   .offer {
     width: 85%;
   }
 }
